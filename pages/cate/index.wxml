@@ -1,2 +1,3 @@
-<!--pages/cate/index.wxml-->
-<text>pages/cate/index.wxml</text>
+<view>{{first}}</view>
+<view>{{text}}</view>
+<view>{{array[0].msg}}</view>

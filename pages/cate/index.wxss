@@ -1,1 +1,4 @@
 /* pages/cate/index.wxss */
+.maps{
+  width: 100%;
+}

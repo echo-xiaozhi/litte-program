@@ -7,7 +7,33 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTitleText": "Little Porgram",
+    "navigationBarTextStyle":"black",
+    "navigationStyle" : "custom"
+  },
+  "tabBar":{
+    "color" : "black",
+    "selectedColor": "#3cc51f",
+    "list" : [
+      {
+        "pagePath" : "pages/index/index",
+        "text" : "首页",
+        "iconPath" : "images/icon_home.png",
+        "selectedIconPath" : "images/icon_home_selected.png"
+      },
+      {
+        "pagePath" : "pages/logs/logs",
+        "text" : "日志",
+        "iconPath" : "images/icon_member.png",
+        "selectedIconPath" : "images/icon_member_selected.png"
+      },
+      {
+        "pagePath" : "pages/cate/index",
+        "text" : "项目",
+        "iconPath" : "images/icon_cate.png",
+        "selectedIconPath" : "images/icon_cate_selected.png"
+      }
+    ]
+  },
+  "debug" : true
 }

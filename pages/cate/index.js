@@ -1,11 +1,14 @@
 // pages/cate/index.js
 Page({
-
+  clickme : function(){
+    this.setData({ msg : "Hello Wrold !" })
+  },
   /**
    * 页面的初始数据
    */
   data: {
-  
+    text : "没事干是吧",
+    array : [{msg:1},{msg:2}]
   },
 
   /**
@@ -26,7 +29,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.setData({first:"每次打开都会看到这句话"})
   },
 
   /**
@@ -47,7 +50,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
