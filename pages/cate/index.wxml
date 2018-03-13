@@ -1,3 +1,15 @@
 <view>{{first}}</view>
 <view>{{text}}</view>
 <view>{{array[0].msg}}</view>
+<view bindtap='viewtap'>{{me}}</view>
+<view bindtap='china'>中文</view>
+<view bindtap='english'>英文</view>
+<template name="staffName">
+  <view>
+   firstName:{{firstName}},lastName:{{lastName}}
+  </view>
+</template>
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+<view bindtap="add_one" hover-class='color'>点击加"1"</view> <view>{{count}}</view>

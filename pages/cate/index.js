@@ -1,14 +1,31 @@
 // pages/cate/index.js
+var common = require('../common.js');
 Page({
-  clickme : function(){
-    this.setData({ msg : "Hello Wrold !" })
+  viewtap:function(){
+    this.setData({me : "你点击了就能看到我了，我可以满足你三个愿望"})
+  },
+  china:function(){
+    common.saynihao('测试');
+  },
+  english:function(){
+    common.sayhello('mina');
+  },
+  add_one:function(){
+    this.setData({
+      count : this.data.count+1
+    })
   },
   /**
    * 页面的初始数据
    */
   data: {
     text : "没事干是吧",
-    array : [{msg:1},{msg:2}]
+    array : [{msg:1},{msg:2}],
+    me : "click me",
+    staffA : {firstName : "Nike", lastName : "Jason"},
+    staffB: { firstName: "Echo", lastName: "Edit" },
+    staffC: { firstName: "Add", lastName: "Porst" },
+    count: 1,
   },
 
   /**

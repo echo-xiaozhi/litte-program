@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText" : "主要项目",
-  "enablePullDownRefresh" : true
+  "enablePullDownRefresh" : true,
+  "component" : true
 }
