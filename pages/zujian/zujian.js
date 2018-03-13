@@ -5,6 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    x : 0,
+    y : 0,
     toView : 'red',
     scrollTop : 100,
     image_urls : [
@@ -15,6 +17,18 @@ Page({
     autoplay : true,
     interval : 5000,
     duration : 1000
+  },
+  taps: function(e){
+    this.setData({
+      x: this.data.x+30,
+      y: this.data.y+30
+    })
+  },
+  on_change: function(e){
+    console.log(e)
+  },
+  on_scale: function(e){
+    console.log(e);
   },
   change_indicator_dots: function(e){
     this.setData({
