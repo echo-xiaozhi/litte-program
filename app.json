@@ -10,7 +10,8 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Little Porgram",
     "navigationBarTextStyle":"black",
-    "navigationStyle" : "custom"
+    "navigationStyle" : "custom",
+    "enablePullDownRefresh" : true
   },
   "tabBar":{
     "color" : "black",

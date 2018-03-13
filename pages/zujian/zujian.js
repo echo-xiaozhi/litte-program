@@ -84,10 +84,15 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
+  onReady: function (e) {
+    this.videoCtx = wx.createVideoContext("my_video")
   },
-
+  play(){
+    this.videoCtx.play()
+  },
+  pause(){
+    this.videoCtx.pause()
+  },
   /**
    * 生命周期函数--监听页面显示
    */
@@ -128,5 +133,6 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  
 })

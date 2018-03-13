@@ -64,3 +64,16 @@
     <movable-view style='height:50px; width:50px; background:blue;' direction="all" bindchange="on_change" bindscale="on_scale" scale scale-min="0.5" scale-max="4" scale-value="2"></movable-view>
   </movable-area>
 </view>
+<view class="sction_title">cover-view</view>
+<video id="my_video" src='http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400' controls event-model="bubble" objectFit="fill">
+  <cover-view class="controls">
+    <cover-view class='play' bindtap='play'>
+      <cover-image class='img' src='http://img.blog.csdn.net/20171207143608413?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQWZhbmJhYnk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast'></cover-image>
+    </cover-view>
+    <cover-view class='pause' bindtap='pause'>
+      <cover-image class='img' src='http://img.blog.csdn.net/20171207143638479?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvQWZhbmJhYnk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast'></cover-image>
+    </cover-view>
+    <cover-view class='time'>00:00</cover-view>
+  </cover-view>
+</video>
+
