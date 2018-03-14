@@ -2,7 +2,35 @@
 var order = ['red','yellow','blue','green','red']
 var initData = 'this is first line \n this is second line'
 var extraline = []
-Page({
+var type = ['default','primary','warn']
+var   pageObject = {
+  data : {
+    default_size : 'default',
+    primary_size : 'default',
+    warn_size : 'default',
+    disabled : false,
+    plain : false,
+    loading : false
+  },
+  set_disabled : function(e){
+    this.setData({
+      disabled : !this.data.disabled
+    })
+  },
+  set_plain : function(e){
+    this.setData({
+      plain : !this.data.plain
+    })
+  },
+  set_loading : function(e){
+    this.setData({
+      loading : !this.data.loading
+    })
+  }
+}
+Page(
+  pageObject,
+  {
   /**
    * 页面的初始数据
    */
