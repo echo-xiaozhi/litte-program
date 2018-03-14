@@ -102,3 +102,8 @@
 </view>
 <view class='section_title'>rich-text 富文本编辑</view>
 <rich-text nodes="{{nodes}}" bindtap='rich_tap'></rich-text>
+<view class='section_title'>progress 进度条</view>
+<progress percent='20' show-info></progress>
+<progress percent='40' stroke-width='12'></progress>
+<progress percent='60' color='pink'></progress>
+<progress percent='100' active show-info></progress>
