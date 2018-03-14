@@ -1,18 +1,32 @@
 // pages/news/index.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this
+    wx.request({
+      url: 'https://tcc.taobao.com/cc/json/mobile_tel_segment.htm?tel=15098800372', //仅为示例，并非真实的接口地址
+      data: {
+        telstring : '',
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          telstring : res.data,
+        })
+      }
+    })
   },
 
   /**

@@ -1,2 +1,4 @@
 <!--pages/news/index.wxml-->
-<text>pages/news/index.wxml</text>
+<view class='thisisim'>
+  <text>{{telstring}}</text>
+</view>
