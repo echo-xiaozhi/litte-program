@@ -53,7 +53,7 @@
     <movable-view style='height:50px; width:50px; background:blue;' x="{{x}}" y="{{y}}" direction="all"></movable-view>
   </movable-area>
   <view class='btn-area'>
-    <button size="mini" bindtap='taps'>click me to move to (30px,30px)</button>
+    <button size="mini" bindtap='taps'>click me to move to (+30px,+30px)</button>
   </view>
   <view class="section_title">movable-view区域大于movable-area</view>
   <movable-area style="height:100px; width:100px;background:red;">
@@ -76,4 +76,27 @@
     <cover-view class='time'>00:00</cover-view>
   </cover-view>
 </video>
-
+<view class="section_title">icon小图标</view>
+<view class="group">
+  <block wx:for="{{icon_size}}">
+    <icon type="success" size='{{item}}'></icon>
+  </block>
+</view>
+<view class='group'>
+  <block wx:for="{{icon_type}}">
+    <icon type='{{item}}' size="40"></icon>
+  </block>
+</view>
+<view class='group'>
+  <block wx:for="{{icon_color}}">
+    <icon type='success' size='40' color='{{item}}'></icon>
+  </block>
+</view>
+<view class='section_title'>text文本</view>
+<view class="btn-area">
+  <view class='body-view'>
+  <text>{{text}}</text>
+  <button bindtap='add'>add line</button>
+  <button bindtap="remove">remove line</button>
+  </view>
+</view>

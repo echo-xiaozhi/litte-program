@@ -1,10 +1,13 @@
 // pages/zujian/zujian.js
 var order = ['red','yellow','blue','green','red']
+var initData = 'this is first line \n this is second line'
+var extraline = []
 Page({
   /**
    * 页面的初始数据
    */
   data: {
+    text : initData,
     x : 0,
     y : 0,
     toView : 'red',
@@ -16,7 +19,24 @@ Page({
     indicator_dots : true,
     autoplay : true,
     interval : 5000,
-    duration : 1000
+    duration : 1000,
+    icon_size :  [15,20,25,30,35,40,45,50],
+    icon_type : ['success','success_no_circle','info','warn','waiting','cancel','download','search','clear'],
+    icon_color : ['red','blue','yellow','black','green']
+  },
+  add: function(e){
+    extraline.push('add line')
+    this.setData({
+      text: initData + '\n' + extraline.join('\n')
+    })
+  },
+  remove: function(e){
+    if(extraline.length > 0){
+      extraline.pop()
+      this.setData({
+        text: initData + '\n' + extraline.join('\n')
+      })
+    }
   },
   taps: function(e){
     this.setData({
