@@ -7,6 +7,17 @@ Page({
    * 页面的初始数据
    */
   data: {
+    nodes: [{
+      name : 'div',
+      attrs : {
+        class : 'div_class',
+        style: "line-height:60px; color:red;"
+      },
+      children:[{
+        type:'text',
+        text:'hello word'
+      }]
+    }],
     text : initData,
     x : 0,
     y : 0,
@@ -23,6 +34,9 @@ Page({
     icon_size :  [15,20,25,30,35,40,45,50],
     icon_type : ['success','success_no_circle','info','warn','waiting','cancel','download','search','clear'],
     icon_color : ['red','blue','yellow','black','green']
+  },
+  rich_tap:function(e){
+    console.log(e)
   },
   add: function(e){
     extraline.push('add line')

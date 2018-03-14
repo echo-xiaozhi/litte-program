@@ -100,3 +100,5 @@
   <button bindtap="remove">remove line</button>
   </view>
 </view>
+<view class='section_title'>rich-text 富文本编辑</view>
+<rich-text nodes="{{nodes}}" bindtap='rich_tap'></rich-text>
