@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/cate/index",
-    "pages/zujian/zujian"
+    "pages/zujian/zujian",
+    "pages/news/index",
+    "pages/navigator/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

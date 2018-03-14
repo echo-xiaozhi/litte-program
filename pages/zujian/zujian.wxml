@@ -115,3 +115,9 @@
 <button bindtap='set_plain'>点击设置以上按钮plain属性</button>
 <button bindtap='set_loading' >点击设置以上按钮loading属性</button>
 <button open-type='contact'>进入客服会话系统</button>
+<view class='sction_title'>navigator 导航</view>
+<view class="btn-area">
+  <navigator url="../news/index" hover-class="navigator-hover">跳转到新页面</navigator>
+  <navigator url="../navigator/index" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+  <navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+</view>
